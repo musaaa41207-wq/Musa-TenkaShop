@@ -9,7 +9,7 @@ function updateTime() {
 setInterval(updateTime, 1000);
 updateTime();
 
-// NAVBAR ACTIVE OTOMATIS
+// NAVBAR ACTIVE
 const navLinks = document.querySelectorAll(".nav-link");
 const currentPage = location.pathname.split("/").pop();
 
