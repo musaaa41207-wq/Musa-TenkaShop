@@ -58,3 +58,32 @@ body {
 .card:hover {
   transform: scale(1.05);
 }
+
+/* ===== MOBILE VIEW ===== */
+@media (max-width: 576px) {
+
+  /* NAVBAR */
+  .navbar {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  .navbar-brand {
+    font-size: 16px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  /* FOOTER */
+  footer {
+    font-size: 12px;
+    padding: 10px 5px !important;
+  }
+
+  footer p {
+    margin-bottom: 4px;
+  }
+}
