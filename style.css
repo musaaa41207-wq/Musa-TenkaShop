@@ -51,3 +51,10 @@ body {
   max-height: 350px;
   object-fit: cover;
 }
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
