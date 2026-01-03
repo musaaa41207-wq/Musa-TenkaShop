@@ -61,6 +61,12 @@ body {
 
 /* ===== MOBILE VIEW ===== */
 @media (max-width: 576px) {
+  .navbar-collapse {
+    background: rgba(0,0,0,0.85);
+    padding: 10px;
+    border-radius: 12px;
+    margin-top: 8px;
+  }
 
   /* NAVBAR */
   .navbar {
