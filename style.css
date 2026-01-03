@@ -1,0 +1,43 @@
+body {
+  background: linear-gradient(135deg, #0f0f0f, #0a0614, #830101);
+  color: #ffffff;
+}
+
+.navbar-custom {
+  background-color: #57121282;
+  border-bottom: 4px solid #a40000;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ft-custom {
+  background-color: #07070782;
+}
+
+.card {
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #121212;
+}
+
+/* ABOUT & CONTACT CARD */
+.about-card {
+  background: rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+}
+
+.about-card p,
+.about-card li,
+.about-card span {
+  color: #ffffff !important;
+}
+
+/* NEWS / GALLERY */
+.news-card img {
+  height: 300px;
+  object-fit: cover;
+}

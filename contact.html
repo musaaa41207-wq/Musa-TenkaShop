@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TenkaShop</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+  <div class="container">
+    <a class="navbar-brand" href="about.html">TenkaShop</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+            Login
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- MODAL LOGIN -->
+<div class="modal fade" id="loginModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white">
+
+      <div class="modal-header border-danger">
+        <h5 class="modal-title">Login TenkaShop</h5>
+        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+          <input class="form-control bg-black text-white mb-3"
+                 placeholder="Email" required>
+
+          <input type="password"
+                 class="form-control bg-black text-white mb-3"
+                 placeholder="Password" required>
+
+          <button class="btn w-100 text-white"
+                  style="background:#830101;">
+            Login
+          </button>
+        </form>
+
+        <p class="text-center mt-3">
+          Belum punya akun?
+          <a href="#" style="color:#ff4d4d;"
+             data-bs-toggle="modal"
+             data-bs-target="#registerModal"
+             data-bs-dismiss="modal">
+            Daftar
+          </a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- MODAL REGISTER -->
+<div class="modal fade" id="registerModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white">
+
+      <div class="modal-header border-danger">
+        <h5 class="modal-title">Daftar Akun</h5>
+        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+          <input class="form-control bg-black text-white mb-3"
+                 placeholder="Nama Lengkap" required>
+
+          <input class="form-control bg-black text-white mb-3"
+                 placeholder="Email" required>
+
+          <input type="password"
+                 class="form-control bg-black text-white mb-3"
+                 placeholder="Password" required>
+
+          <button class="btn w-100 text-white"
+                  style="background:#830101;">
+            Daftar
+          </button>
+        </form>
+
+        <p class="text-center mt-3">
+          Sudah punya akun?
+          <a href="#" style="color:#ff4d4d;"
+             data-bs-toggle="modal"
+             data-bs-target="#loginModal"
+             data-bs-dismiss="modal">
+            Login
+          </a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<section id="contact" class="container my-5">
+  <div class="card p-4 shadow about-card">
+    <h3 class="mb-3" style="color:#c40000;">Hubungi Kami</h3>
+
+    <p>
+      Jika Anda memiliki pertanyaan, kritik, atau saran,
+      silakan hubungi kami melalui informasi di bawah ini.
+    </p>
+
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <h6 style="color:#c40000;">Informasi Kontak</h6>
+        <p>Email : support@tenkashop.com</p>
+        <p>WhatsApp : 08xx-xxxx-xxxx</p>
+        <p>Instagram : @tenkashop.id</p>
+        <p>Website : www.tenkashop.com</p>
+      </div>
+
+      <div class="col-md-6">
+        <h6 style="color:#c40000;">Formulir Kontak</h6>
+
+        <form>
+          <div class="mb-3">
+            <input type="text"
+                   class="form-control bg-black text-white"
+                   placeholder="Nama Lengkap"
+                   style="border:1px solid #830101;">
+          </div>
+
+          <div class="mb-3">
+            <input type="email"
+                   class="form-control bg-black text-white"
+                   placeholder="Email"
+                   style="border:1px solid #830101;">
+          </div>
+
+          <div class="mb-3">
+            <textarea class="form-control bg-black text-white"
+                      rows="4"
+                      placeholder="Pesan"
+                      style="border:1px solid #830101;"></textarea>
+          </div>
+
+          <button type="submit"
+                  class="btn text-white"
+                  style="background:#830101;">
+            Kirim Pesan
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="ft-custom text-center p-3">
+© 2025 Rionaldi Musa | 251011700104 | 01SIFP002 | <span style="color:#d80404;">TenkaShop</span>
+ <p>Waktu server : <span id="jam"></span></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+
+</body>
+</html>
